@@ -2,14 +2,7 @@
 #pip3 install pandas datasets transformers 
 import pandas as pd
 from datasets import Dataset
-from transformers import (
-    AutoTokenizer,
-    AutoModelForCausalLM,
-    DataCollatorForLanguageModeling,
-    DeepSpeedPlugin,
-    Trainer,
-    TrainingArguments,
-)
+from transformers import AutoTokenizer, AutoModelForCausalLM, DataCollatorForLanguageModeling, DeepSpeedPlugin, Trainer, TrainingArguments
 
 # Reading the file
 data = pd.read_excel("MedQuad dataset test.xlsx")
